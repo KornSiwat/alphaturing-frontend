@@ -1,0 +1,123 @@
+/* global */
+
+*,
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0 32px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* layout */
+
+.intro-section {
+  align-self: center;
+
+  height: 100vh;
+  padding: 32px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* component style */
+
+.logo {
+  align-self: center;
+
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+
+  margin-top: -88px;
+  margin-bottom: -64px;
+}
+
+.btn {
+  width: 80%;
+  max-width: 300px;
+
+  margin-top: 16px;
+  padding: 12px 8px;
+
+  background: rgba(255, 145, 72, 0.76);
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.187);
+  backdrop-filter: blur(14.5px);
+  -webkit-backdrop-filter: blur(14.5px);
+
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  font-size: 0.8em;
+
+  cursor: pointer;
+
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:active {
+  background: rgba(243, 201, 172, 0.76);
+}
+
+.slogan {
+  font-size: 0.9em;
+  color: rgb(97, 97, 97);
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    padding: 0 64px;
+  }
+
+  .intro-section {
+    max-width: 900px;
+    padding-top: 0;
+
+    font-size: 1.6em;
+  }
+
+  .logo {
+    max-width: 550px;
+
+    margin-top: -32px;
+    margin-bottom: -103px;
+  }
+
+  .menu-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .btn {
+    margin: 0 16px;
+  }
+
+  .slogan {
+    font-size: 1.1em;
+  }
+}
